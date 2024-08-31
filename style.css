@@ -1,0 +1,211 @@
+:root{
+    --footer-background-cplor:hsl(243, 87%, 12%);
+    --footer-color: white;
+    --button-bg-color:hsl(224, 93%, 58%);
+    --body-bg-color:hsl(240, 75%, 98%);
+    --container-4-bg-color:hsla(240, 57%, 61%, 0.59);
+    --curve-img-background-color:hsl(0, 0%, 75%);
+
+}
+body{
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: var(--body-bg-color);
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+  }
+.navebar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: auto 5%;
+    
+
+}
+.nave-bar{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    list-style: none;
+}
+/* ---------------------1 imeage and container format code------------------------------------------------------------------- */
+.contant-container-1{
+    display: flex;
+    align-items: center;
+
+    padding: 30px 20px;
+    margin: 10px auto;
+   
+}
+.first-container{
+    width: 40%;  
+}
+input{
+    height: 30px;
+    width: 50%;
+}
+button{
+    height: 34px;
+    width: 40%;
+    border: 0px;
+    color: var(--footer-color);
+    background-color: var(--button-bg-color);
+}
+.img-1{
+    width: 70%;
+    display: flex;
+}
+#img-1{
+    width: 70%;
+}
+
+.bg-img img{
+    width: 100%;
+    display: block;
+}
+/* ----------------------2 imeage and container format code--------------------------------------------------------------------------- */
+.contant-container-2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+    margin: 10px auto;
+}
+.second-container{
+    width: 50%;
+}
+.second-para>a{
+    list-style: none;
+    
+}
+.img-2{
+    width: 70%;
+    margin-top: 4%; 
+    
+}
+#img-2{
+    width: 70%;
+}
+
+/* ----------------------profile-imeage format---------------------------------------------------------------------------------- */
+.profile{
+    width: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin-top: 10%;
+    border-radius: 4px;
+}
+.fa-solid {
+    margin: 0px;
+}
+.user{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+#user-img{
+    width: 20%;
+    height: 20%;
+    border-radius: 90%;
+}
+.user-info h4{
+    margin: 0px;
+}
+
+/* ----------------------content-container-4 format code------------------------------------------------------------------------------------------------------------------------- */
+.content-container-4{
+    display: flex;
+    padding: 30px 20px;
+    margin-top: 30px;
+    background-color: var(--container-4-bg-color);
+    color:var(--footer-color) ;
+}
+.content-container-4 p{
+    width: 50%;
+}
+.email{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+}
+.email input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 27px;
+    border-radius: 3px;
+    border: none;
+}
+.email button{
+    margin-top: 20px;
+    width: 50%;
+    padding: 10px;
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+/* -----------------------footer format code-------------------------------------------------------------------------------------------------------------------------------------- */
+footer{
+    padding: 10px;
+    display: flex;
+    color: var(--footer-color);
+    background-color: var(--footer-background-cplor);
+}
+footer ul{
+    list-style: none;
+    
+}
+.company-profile{
+    width: 25%;
+    padding: 10px;
+}
+.company-profile div{
+    padding:10px;
+}
+.company-details{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.company-details ul li{
+    padding: 5px;
+    margin: 0px;
+}
+.company-details-2{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.company-details-2 ul li{
+    padding: 5px;
+    margin: 0px;
+}
+.company-details-2 ul{
+    margin-bottom: 35px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.social-media {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+}
+.social-media i{
+    padding: 48%;
+}
