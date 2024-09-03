@@ -5,6 +5,7 @@
     --body-bg-color:hsl(240, 75%, 98%);
     --container-4-bg-color:hsla(240, 57%, 61%, 0.59);
     --curve-img-background-color:hsl(0, 0%, 75%);
+    --link-color: #8fb7b2;
 
 }
 body{
@@ -14,6 +15,7 @@ body{
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     background-color: var(--body-bg-color);
+    box-sizing: border-box;
 }
 h1{
     font-family: "Raleway", sans-serif;
@@ -47,8 +49,10 @@ h1{
     width: 40%;  
 }
 input{
-    height: 30px;
+    height: 34px;
     width: 50%;
+    border: 0px;
+    border-radius: 4px;
 }
 button{
     height: 34px;
@@ -56,37 +60,48 @@ button{
     border: 0px;
     color: var(--footer-color);
     background-color: var(--button-bg-color);
+    border-radius: 4px;
 }
 .img-1{
     width: 70%;
     display: flex;
+    justify-content: space-around;
 }
 #img-1{
     width: 70%;
 }
 
-.bg-img img{
-    width: 100%;
-    display: block;
-}
+
 /* ----------------------2 imeage and container format code--------------------------------------------------------------------------- */
+.contant-container-2{
+    background-image:url("Assets/bg-curve-desktop.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: auto;
+    mix-blend-mode:multiply;
+}
 .contant-container-2{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 0px;
     padding: 30px 20px;
-    margin: 10px auto;
+    margin: 0px; 
+    
+
 }
 .second-container{
     width: 50%;
 }
-.second-para>a{
+a{
     list-style: none;
-    
+    color: var(--link-color);
 }
 .img-2{
     width: 70%;
     margin-top: 4%; 
+    display: flex;
+    justify-content: space-around;
     
 }
 #img-2{
@@ -123,7 +138,7 @@ button{
 .content-container-4{
     display: flex;
     padding: 30px 20px;
-    margin-top: 30px;
+    margin-top: 0px;
     background-color: var(--container-4-bg-color);
     color:var(--footer-color) ;
 }
@@ -138,19 +153,16 @@ button{
 }
 .email input{
     width: 100%;
-    padding: 12px;
-    margin-top: 27px;
-    border-radius: 3px;
-    border: none;
+    height: 34px;
+    border-radius: 4px;
 }
 .email button{
-    margin-top: 20px;
+    margin-top: 10px;
     width: 50%;
-    padding: 10px;
     background-color: hsl(224, 93%, 58%);
     color: white;
     border: none;
-    border-radius: 3px;
+    border-radius: 4px;
     font-weight: 700;
 }
 
@@ -177,6 +189,7 @@ footer ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 57px;
    
 }
 .company-details ul li{
@@ -188,6 +201,7 @@ footer ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 .company-details-2 ul li{
     padding: 5px;
