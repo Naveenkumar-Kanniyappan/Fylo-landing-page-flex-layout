@@ -8,7 +8,10 @@
     --curve-img-background-color: hsl(0, 0%, 75%);
     --link-color: #8fb7b2;
 }
-
+html{
+    margin: 0;
+    padding: 0;
+}
 body {
     width: 100%;
     margin: 0;
@@ -26,15 +29,14 @@ h1 {
 
 .main-container {
     width: 100%;
-    min-width: 850px;
+    /* min-width: 850px; */
 }
 
 .container {
-    width: 97%;
-    min-width: 850px;
+    /* width: 97%;
+    min-width: 850px; */
     display: flex;
     align-items: center;
-    justify-content: space-around;
     padding: 10px 20px;
 }
 
@@ -43,13 +45,15 @@ h1 {
 }
 
 .buttons {
-    width: 45%;
+    width: 50%;
 }
 
 .nave-bar {
+    width: 100%;
     display: flex;
     gap: 2%;
     justify-content: end;
+    padding-left: 30px;
 }
 
 .buttons ul li {
@@ -62,7 +66,7 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 30px 20px;
-    min-width: 850px;
+    /* min-width: 850px; */
 }
 
 .first-container {
@@ -106,7 +110,7 @@ button {
     align-items: center;
     justify-content: center;
     padding: 30px 20px;
-    min-width: 850px;
+    /* min-width: 850px; */
 }
 
 .second-container {
@@ -157,7 +161,7 @@ a {
 /* ----------------------content-container-4 format code------------------------------------------------------------------ */
 .content-container-4 {
     padding: 30px 20px;
-    min-width: 850px;
+    /* min-width: 850px; */
     display: flex;
     justify-content: space-around;
     background-color: var(--container-4-bg-color);
@@ -176,25 +180,31 @@ a {
 }
 
 .form-contant input {
-    width: 100%;
+    width: 40%;
     margin: 10px auto;
 }
 
 .form-contant .get-start {
-    width: 40%;
+    width: 43%;
 }
-
+.form-container input{
+    width: 100%;
+}
+.form-container button{
+    width: 100%;
+}
 /* -----------------------footer format code-------------------------------------------------------------------------- */
 footer {
     padding: 30px 20px;
     display: flex;
-    min-width: 850px;
+    /* min-width: 850px; */
     justify-content: space-around;
     color: var(--footer-color);
     background-color: var(--footer-background-color);
 }
 
 footer ul {
+    padding: 0px;
     list-style: none;
 }
 
@@ -219,7 +229,7 @@ footer ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     height: 50px;
 }
 
@@ -232,36 +242,39 @@ footer ul {
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 375px) {
     body {
+        margin: 0;
+        padding: 0;
+        max-width: 1440px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0;
-        padding: 0;
     }
 
     .main-container {
         width: 100%;
-        min-width: 400px;
+        min-width: 343px;
         flex-direction: column;
-        padding: 0;
+        /* padding: 20px; */
     }
 
     .container {
-        width: 100%;
-        min-width: 400px;
+        width: 55%;
+        min-width: 328px;
         display: flex;
         align-items: center;
-        padding: 10px;
-       
+        padding: 20px;
     }
 
     .navebar-img {
-        width: 45%;
+        width: 30%;
+    }
+    .navebar-img img{
+        width: 100%;
     }
     .buttons{
-        width: 45%;
+        width: 57%;
     }
 
     .nave-bar {
@@ -271,10 +284,10 @@ footer ul {
     }
 
     .contant-container-1 {
-        min-width: 400px;
+        min-width: 327px;
         flex-direction: column-reverse;
-        padding: 20px;
         text-align: center;
+        padding: 20px;
     }
 
     .first-container {
@@ -288,32 +301,69 @@ footer ul {
     }
 
     .contant-container-2 {
-        min-width: 400px;
+        min-width: 328px;
         flex-direction: column-reverse;
         padding: 20px;
     }
 
     .second-container {
         width: 100%;
-        text-align: center;
     }
-
+    .second-container  .link {
+       text-align: center;
+    }
+    .second-container h1 {
+        font-size: 20px;
+       text-align: center;
+    }
+    .second-container .user{
+        width: 100%;
+    }
+    .second-container .profile{
+        width: 87%;
+    }
     .img-two {
         width: 100%;
         display: block;
     }
-
-    .profile {
-        margin: 20px auto;
-        border-radius: 4px;
+    .therd-container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        font-size: smaller;
+        padding: 20px;
     }
 
+    /* .profile { */
+
+        .form-contant .get-start {
+            width: 100%;
+        }
+    
+        footer {
+            min-width: 328px;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+    
+        .company-profile{
+        /* margin: 20px auto; */
+        width: 90%;
+        border-radius: 4px;
+    }
+    .profile p{
+        font-size: small;
+    }
     #user-img {
-        width: 40%;
+        width: 18%;
+    }
+    .header-para h1,p{
+        text-align: center;
     }
 
     .content-container-4 {
-        min-width: 400px;
+        min-width: 328px;
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -327,7 +377,7 @@ footer ul {
     }
 
     .form-contant input {
-        width: 100%;
+        width: 98%;
         margin: 10px 0;
     }
 
@@ -336,7 +386,7 @@ footer ul {
     }
 
     footer {
-        min-width: 400px;
+        min-width: 328px;
         flex-direction: column;
         align-items: center;
         padding: 20px;
@@ -346,19 +396,30 @@ footer ul {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
+        padding: 10px;
     }
-
+    .phone{
+        margin: 20px 0px;
+    }
     .company-details{
         margin-top: 0;
         width: 100%;
-        text-align: center;
+        text-align: start;
         margin-bottom: 20px;
+        padding: 0px;
+    }
+    .company-details ul li{
+        margin: 20px 0px;
     }
    .company-details-2 {
         margin-top: 0;
         width: 100%;
-        text-align: center;
+        text-align: start;
         margin-bottom: 20px;
+        padding: 0px;
+    }
+    .company-details-2 ul li{
+        margin: 20px 0px;
     }
 
     .social-media {
@@ -368,6 +429,7 @@ footer ul {
         width: 100%;
         text-align: center;
         margin-bottom: 20px;
+        padding: 0px;
     }
 
     .logo {
